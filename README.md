@@ -1,13 +1,13 @@
-## No Longer Maintained
+## No Longer Maintained by Jason Lewis
 
 Basset is no longer being maintained by me (Jason Lewis). Appologies to those of you that have invested time into this package. Feel free to fork it if
 you feel the need but I strongly urged you to shift over to using [Grunt](http://gruntjs.com/) to manage the compiling and concatenation of your assets.
 
+## I've (Tim Clark) recently begun doing some minor maintenance, keeping the package working.
+
 Once again, I'm sorry, I just don't have the time and Grunt does an amazing job.
 
 ## Basset for Laravel 4
-
-[![Build Status](https://secure.travis-ci.org/jasonlewis/basset.png)](http://travis-ci.org/jasonlewis/basset)
 
 Basset is a better asset management package for the Laravel framework. Basset shares the same philosophy as Laravel. Development should be an enjoyable and fulfilling experience. When it comes to managing your assets it can become quite complex and a pain in the backside. These days developers are able to use a range of pre-processors such as Sass, Less, and CoffeeScript. Basset is able to handle the processing of these assets instead of relying on a number of individual tools.
 
@@ -19,7 +19,7 @@ Basset is a better asset management package for the Laravel framework. Basset sh
 To get the latest version of Basset simply require it in your `composer.json` file.
 
 ~~~
-"jasonlewis/basset": "dev-master"
+"chugga/basset": "4.0.*@dev"
 ~~~
 
 You'll then need to run `composer install` to download it and have the autoloader updated.
