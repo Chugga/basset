@@ -280,7 +280,11 @@ class Server {
      */
     public function buildAssetUrl($path)
     {
-        return starts_with($path, '//') ? $path : $this->app['url']->asset($path);
+         if(isset($this->app['config']->get('app')['ssl_enabled']) && $this->app['config']->get('app')['ssl_enabled']) {
+            return starts_with($path, '//') ? $path : $this->app['url']->secureAsset($path);
+        } else {
+            return starts_with($path, '//') ? $path : $this->app['url']->asset($path);
+        }
     }
 
 }
