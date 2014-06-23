@@ -14,6 +14,15 @@ class FactoryManager extends Manager {
 	{
 		return $this->driver($factory);
 	}
+	
+
+	/**
+	 * Get the default driver (not currently in use)
+	 **/
+	public function getDefaultDriver()
+	{
+		return '';
+	}
 
 	/**
 	 * Create the asset factory driver.
